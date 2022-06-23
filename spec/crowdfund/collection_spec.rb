@@ -1,5 +1,8 @@
-require_relative "collection"
-require_relative "die"
+#require_relative "collection"
+require 'crowdfund/collection'
+#require_relative "die"
+require 'crowdfund/die'
+
 module Crowdfund
     describe Collection do
 
@@ -58,7 +61,8 @@ module Crowdfund
     context "default values replacing nils (with default project file)" do
         before do 
             @my_collection = Collection.new("Test collection")
-            @my_collection.load_projects("EXAMPLE_PROJECTS.csv") #plays an entered file OR the default (WALL.csv)
+            default_player_file = File.join(File.dirname(__FILE__), "../../bin/EXAMPLE_PROJECTS.csv") #plays an entered file OR the default (WALL.csv)
+            @my_collection.load_projects(ARGV.shift || default_player_file)
         end
 
         it "replaces nil amount values with default value of amount=0" do

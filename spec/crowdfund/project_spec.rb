@@ -1,6 +1,8 @@
 # ***** SONG TEST FILE *******
-require_relative 'project' # calls the project class file 
-require_relative 'pledgepool' # calls the project class file 
+#require_relative 'project' # calls the project class file 
+require 'crowdfund/project'
+#require_relative 'pledgepool' # calls the project class file 
+require 'crowdfund/pledgepool'
 module Crowdfund
     describe Project do
 

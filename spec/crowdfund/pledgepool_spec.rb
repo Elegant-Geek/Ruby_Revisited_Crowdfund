@@ -1,4 +1,5 @@
-require_relative "pledgepool"
+#require_relative "pledgepool"
+require 'crowdfund/pledgepool'
 
 module Crowdfund  
   describe Pledge do

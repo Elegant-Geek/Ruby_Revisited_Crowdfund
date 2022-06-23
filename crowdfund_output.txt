@@ -1,27 +1,29 @@
-File updated on 06/23/2022 at 12:21 AM
-JAMIE'S COLLECTION OF PROJECTS 
+File updated on 06/23/2022 at 03:10 AM
+JAMIE'S COLLECTION OF PROJECTS
+
 Crowdfund Output:
 
-Project ABC: $185/100 (over goal)
+Project ABC: $260/100 (over goal)
 Total pledge tier donations for ABC:
-Gold: $100
-Silver: $75
+Gold: $200
+Bronze: $50
 Other donations: $10
 
-Project LMN: $965/10000 (under goal)
+Project LMN: $1020/10000 (under goal)
 Total pledge tier donations for LMN:
-Silver: $150
-Other donations: $815
+Silver: $225
+Other donations: $795
 
-Project XYZ: $140/300 (under goal)
+Project XYZ: $270/300 (under goal)
 Total pledge tier donations for XYZ:
-Silver: $75
+Gold: $100
 Bronze: $50
-Other donations: $15
+Silver: $75
+Other donations: $45
 
 Projects at/over goal:
-ABC: $185/100
+ABC: $260/100
 
 Projects under goal:
-LMN: $965/10000
-XYZ: $140/300
+LMN: $1020/10000
+XYZ: $270/300

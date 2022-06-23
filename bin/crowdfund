@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 #crowdfund (File created 8:43PM on 5/8/22)
 #end of day one is 8:24pm-10:47pm 5/8/22
 #day two is 5:45pm - .... 9pm 5/24/22
@@ -10,16 +11,13 @@
 #day nine is 11:47pm - 5:34AM!! 6/22/22 (night)
 #day ten is 8:08pm - 12:24am and 12:50am - 6/22/22 (day)
 
-require_relative 'collection' # calls the collection class file 
-require_relative 'project' # calls the project class file 
-require_relative 'die'
+require_relative '../lib/crowdfund/collection' # calls the collection class file 
+require_relative '../lib/crowdfund/project' # calls the project class file 
+require_relative '../lib/crowdfund/die'
 
 my_collection = Crowdfund::Collection.new("Jamie's collection of projects")
-my_collection.load_projects(ARGV.shift || "EXAMPLE_PROJECTS.csv") #plays an entered file OR the default (WALL.cs)
-
-# [project1, project2, project3].each do |project|
-#     my_collection.add_project(project)
-# end
+default_player_file = File.join(File.dirname(__FILE__), "EXAMPLE_PROJECTS.csv") #plays an entered file OR the default (WALL.csv)
+my_collection.load_projects(ARGV.shift || default_player_file) #plays an entered file OR the default csv
 
 loop do
     puts "\nHow many rounds? ('quit' to exit)"

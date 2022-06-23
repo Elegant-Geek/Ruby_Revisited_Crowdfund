@@ -88,7 +88,8 @@ module Crowdfund
         def save_output(to_file="crowdfund_output.txt")
             File.open(to_file, "w") do |file|
             file.puts Time.new.strftime("File updated on %m/%d/%Y at %I:%M %p")
-            file.puts "#{@name} \nCrowdfund Output:"
+            file.puts "#{@name}"
+            file.puts "\nCrowdfund Output:"
 
             @collection.each do |project|     
                 if project.total_amount > project.target_goal
