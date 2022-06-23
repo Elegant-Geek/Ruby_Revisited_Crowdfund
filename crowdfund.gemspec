@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-    s.name         = "ruby_project_crowdfunding"
+    s.name         = "crowdfund"
     s.version      = "1.0.0"
     s.author       = "Jamie Clark"
     s.email        = "clarkcjamie@gmail.com"
