@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name         = "crowdfund"
-    s.version      = "1.0.2"
+    s.version      = "1.0.3"
     s.author       = "Jamie Clark"
     s.email        = "clarkcjamie@gmail.com"
     s.homepage     = "http://pragmaticstudio.com" 
